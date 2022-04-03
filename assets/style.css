@@ -1,14 +1,44 @@
-button{
-    color: white;
-    background-color: rgb(167, 71, 167);
-    border-radius: 7px;
+* {
+    box-sizing: border-box;
   }
+.highscores{
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+} 
+
+.time{
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+}
 
 h1{
     font-family: Helvetica, sans-serif;
-
+    text-align:center;
 }
 
 p{
     font-family: Helvetica, sans-serif;
+   
+}
+
+
+.box{
+    width: 30vw;
+    height: 400px;
+    
+    margin-left: auto;
+    margin-right: auto
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color: white;
+    background-color: rgb(167, 71, 167);
+    border-radius: 7px;
+    display: block;
+    margin: 3px;
 }
