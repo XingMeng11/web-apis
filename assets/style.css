@@ -16,23 +16,17 @@ h1{
     text-align:center;
 }
 
+h2{
+    font-family: Helvetica, sans-serif;
+}
+
+h3{
+    font-family: Helvetica, sans-serif;
+}
+
 p{
     font-family: Helvetica, sans-serif;
-   
-}
-
-
-.box{
-    width: 30vw;
-    height: 400px;
-    
-    margin-left: auto;
-    margin-right: auto
-}
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   text-align: center;
 }
 
 button{
@@ -41,4 +35,9 @@ button{
     border-radius: 7px;
     display: block;
     margin: 3px;
+}
+.startBtn{
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
