@@ -6,7 +6,7 @@
     font-family: Helvetica, sans-serif;
 } 
 
-.time{
+#time{
     text-align: right;
     font-family: Helvetica, sans-serif;
 }
@@ -36,8 +36,33 @@ button{
     display: block;
     margin: 3px;
 }
+
+button:hover,
+button:focus {
+    opacity: 0.8;
+}
 .startBtn{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.questionBox{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    display: none;
+}
+
+.scorePage{
+    display: none;
+    width: 60%;
+    margin: auto;
+    padding: 10px; 
+}
+.answer-result{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    padding: 10px; 
 }

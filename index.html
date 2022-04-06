@@ -10,82 +10,102 @@
 <body>
     <header class = "highscores">View Highscores</header>
 
-    <header class = "time">Time: 60</header>
+    <header id = "time">Time:  </header>
   <main>
-     <section>
+     <section id = "start-Page" >
           <h1>Coding Quiz Challenge</h1>
           <p>
 Try to answers the following questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds.
           </p>
           <div class="startBtn">
-         <button >Start Quiz!</button>
+        <button>Start Quiz!</button>
         </div>
      </section>
 
      <section>
-        <div class = "questionBox-1">
+        <div id = "question-1"  class = "questionBox 1">
          <h2>Commonly used data types DO NOT include:</h2>
-          <button>1. strings</button>
-          <button>2. booleans</button>
-          <button>3. numbers</button>
-          <button>4. alerts</button>
+         <div answer1 = "4. alerts" class = "time-control1">
+          <button class = "choice-btn" time-change = "-5">1. strings</button>
+          <button class = "choice-btn" time-change = "-5">2. booleans</button>
+          <button class = "choice-btn" time-change = "-5">3. numbers</button>
+          <button class = "choice-btn" time-change = "+5">4. alerts</button>
+        </div>
         </div>
      </section>
 
      <section>
-        <div class = "questionBox-2">
+        <div id = "question-2" class = "questionBox 2">
         <h2>Arrays in JavaScript can be used to store____.</h2>
-          <button>1. Numbers and strings</button>
-          <button>2. Other arrays</button>
-          <button>3. Booleans</button>
-          <button>4. All of the above</button>
+        <div answer2 = "4. All of the above" class = "time-control2">
+          <button class = "choice-btn" time-change = "-5">1. Numbers and strings</button>
+          <button class = "choice-btn" time-change = "-5">2. Other arrays</button>
+          <button class = "choice-btn" time-change = "-5">3. Booleans</button>
+          <button class = "choice-btn" time-change = "+5">4. All of the above</button>
+        </div>
+        <div class = "answer-result1"></div>
         </div>
       </section>
 
       <section>
-        <div class = "questionBox-3">
+        <div id = "question-3" class = "questionBox 3">
         <h2>The condition in an if/else statement is enclosed within____.</h2>
-          <button>1. Quotation marks</button>
-          <button>2. Curly brackets</button>
-          <button>3. Parentheses</button>
-          <button>4. Square brackets</button>
+        <div answer3 = "3. Parentheses" class = "time-control3">
+          <button class = "choice-btn" time-change = "-5">1. Quotation marks</button>
+          <button class = "choice-btn" time-change = "-5">2. Curly brackets</button>
+          <button class = "choice-btn" time-change = "+5">3. Parentheses</button>
+          <button class = "choice-btn" time-change = "-5">4. Square brackets</button>
+        </div>
+        <div class = "answer-result2"></div>
         </div>
       </section>
 
 
       <section>
-        <div class = "questionBox-4">
+        <div id = "question-4" class = "questionBox 4">
         <h2>String values must be enclosed within ____when being assigned to variables.</h2>
-          <button>1. Commas</button>
-          <button>2. Curly brackets</button>
-          <button>3. Quotation mark</button>
-          <button>4. Parentheses</button>
+        <div answer4 = "3. Quotation mark" class = "time-control4">
+          <button class = "choice-btn" time-change = "-5">1. Commas</button>
+          <button class = "choice-btn" time-change = "-5">2. Curly brackets</button>
+          <button class = "choice-btn" time-change = "+5">3. Quotation mark</button>
+          <button class = "choice-btn" time-change = "-5">4. Parentheses</button>
+        </div>
+        <div class = "answer-result3"></div>
         </div>
       </section>
 
 
       <section>
-        <div class = "questionBox-5">
+        <div id = "question-5" class = "questionBox 5">
         <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
-          <button>1. JavaScript</button>
-          <button>2. Terminal</button>
-          <button>3. For loop</button>
-          <button>4. Console.log</button>
+        <div answer5 = "4. Console.log" class = "time-control5">
+          <button class = "choice-btn" time-change = "-5">1. JavaScript</button>
+          <button class = "choice-btn" time-change = "-5">2. Terminal</button>
+          <button class = "choice-btn" time-change = "-5">3. For loop</button>
+          <button class = "choice-btn" time-change = "+5">4. Console.log</button>
+        </div>
+        <div class = "answer-result4"></div>
         </div>
       </section>
 
 
       <section>
+        <div  id = "score-1" class = "scorePage 1">
           <h2>All done!</h2>
-          <h3>Your final score is: </h3>
-          <h3>Enter initial:  <button>Submit</button></h3>
+          <h3><div id = "finalScore">Your final score is: </div></h3>
+          <label>Enter initial: <input type="text" id = "initial"> <button id = "submit">Submit</button></lable>
+        </div>
+        <div class = "answer-result5"></div>
       </section>
 
 
       <section>
+        <div  id = "score-2" class = "scorePage 2">
           <h2>Highscores</h2>
+          <div> </div>
           <button>Go back</button>
           <button>Clear Highscores</button>
+        </div>
       </section>
 
   </main>
